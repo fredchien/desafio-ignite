@@ -66,7 +66,7 @@ app.post('/todos', checksExistsUserAccount, (req, res) => {
 
   user.todos.push(newTodo);
 
-  return res.status(201).json(todo);
+  return res.status(201).json(newTodo);
 });
 
 app.put('/todos/:id', checksExistsUserAccount, (req, res) => {
